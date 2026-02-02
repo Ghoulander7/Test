@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#121212">
 
-    <Button
-        android:id="@+id/counterButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="0"
-        android:textSize="120sp"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#1E88E5"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/counterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="140sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="60dp" />
+
+        <Button
+            android:id="@+id/counterButton"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:text="+1"
+            android:textSize="48sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1E88E5"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="160dp"
+            android:layout_height="56dp"
+            android:text="RESET"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
 
 </FrameLayout>
