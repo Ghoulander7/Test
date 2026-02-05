@@ -7,7 +7,7 @@ import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -25,8 +25,8 @@ public class MainActivity extends Activity {
     private TreasureChestView chestView;
     private TextView counterText;
     private TextView timerText;
-    private LinearLayout gameOverLayout;
-    private LinearLayout winLayout;
+    private RelativeLayout gameOverLayout;
+    private RelativeLayout winLayout;
 
     private static final int GOAL = 100;
     private static final long GAME_TIME_MS = 10000;
